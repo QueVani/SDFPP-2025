@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 relative font-poppins">
+
+  <!-- Background gradient -->
+  <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-purple-50 opacity-20 -z-10"></div>
+
+  <div class="max-w-[90%] mx-auto py-12">
+
+    <!-- Profile Header -->
+    <header class="bg-white w-full rounded-[29px] shadow-lg flex flex-col md:flex-row items-center gap-8 py-12 px-8">
+      <!-- Profile Picture -->
+      <div class="flex-shrink-0">
+        <img src="your-image.jpg" alt="Profile Photo" class="w-[300px] h-[300px] rounded-[29px] object-cover shadow-lg">
+      </div>
+      <!-- Name & Summary -->
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <h1 class="text-5xl sm:text-6xl md:text-[64px] font-bold text-gray-900 leading-tight">Your Name</h1>
+        <p class="mt-6 text-lg sm:text-xl md:text-[20px] text-gray-700 max-w-[600px]">
+          A brief professional summary highlighting your key skills and experience.
+        </p>
+      </div>
+    </header>
+    <!-- Proficiency + Skills Row -->
+<div class="flex flex-col md:flex-row gap-8 mt-16 justify-center">
+    <!-- Proficiency Bars -->
+      <section class="bg-white w-full md:max-w-[564px] rounded-[29px] shadow-lg p-[41px_28px] flex flex-col gap-[10px]">
+        <h2 class="text-2xl font-semibold mb-4">Proficiency</h2>
+        <div>
+          <p class="font-medium mb-1">HTML</p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+          </div>
+        </div>
+
+    <div>
+          <p class="font-medium mb-1">CSS</p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-green-500 h-4 rounded-full" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div>
+          <p class="font-medium mb-1">JavaScript</p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-yellow-500 h-4 rounded-full" style="width: 80%;"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Skill Tags -->
+      <section class="bg-white w-full md:max-w-[706px] rounded-[29px] shadow-lg p-7 flex flex-col gap-[39px]">
+        <h2 class="text-2xl font-semibold">Skills</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">HTML</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">CSS</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">JavaScript</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">React</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Node.js</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Tailwind</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Git</span>
+          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Figma</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- Projects Section -->
+<section class="bg-white w-full rounded-[29px] shadow-lg p-8 mt-16">
+  <!-- Heading centered at top -->
+  <h2 class="text-center font-medium text-[33.88px] leading-[150%] text-gray-900 mb-8" style="width: 136px; height: 51px; margin: 0 auto;">
+    Projects
+  </h2>
+
+  <!-- Projects Row -->
+  <div class="flex gap-8 overflow-x-auto pb-4">
+    
+    <!-- first project placeholder -->
+    <article class="rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] bg-[#4A8B70] text-white flex-shrink-0">
+      <h3 class="text-xl font-bold mb-4">Project Title 1</h3>
+      <p class="flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+      <div class="mt-auto">
+        <span class="font-medium underline">View More</span>
+      </div>
+    </article>
+
+    <!-- second project placeholder -->
+    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+      <h3 class="text-xl font-bold mb-4">Project Title 2</h3>
+      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+      <div class="mt-auto">
+        <span class="text-blue-500 font-medium">View More</span>
+      </div>
+    </article>
+
+    <!-- third project placeholder -->
+    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+      <h3 class="text-xl font-bold mb-4">Project Title 3</h3>
+      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+      <div class="mt-auto">
+        <span class="text-blue-500 font-medium">View More</span>
+      </div>
+    </article>
+
+    <!-- fourth project placeholder -->
+    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+      <h3 class="text-xl font-bold mb-4">Project Title 4</h3>
+      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+      <div class="mt-auto">
+        <span class="text-blue-500 font-medium">View More</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Education + Tools Row -->
+<div class="flex gap-8 mt-16">
+
+   <!-- Education Section -->
+<section class="bg-white rounded-[29px] shadow-lg p-[29px] flex flex-col gap-[10px] w-[995px] h-[847px]">
+  <h2 class="text-3xl font-semibold mb-6">Education</h2>
+
+  <!-- First Education Card -->
+  <article class="bg-[#4A8B70] rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px] text-white">
+    <h3 class="text-xl font-bold">Bachelor of Science, University Name</h3>
+    <p>2015 – 2019 | Major: Computer Science</p>
+    <p>Additional details about achievements or focus areas can go here.</p>
+  </article>
+
+  <!-- Second Education Card -->
+  <article class="bg-gray-100 rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px]">
+    <h3 style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">Bachelor of Science</h3>
+    <p style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">University Name | 2015–2019</p>
+  </article>
+
+  <!-- third Education Card -->
+  <article class="bg-gray-100 rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px]">
+    <h3 style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">Bachelor of Science</h3>
+    <p style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">University Name | 2015–2019</p>
+  </article>
+</section>
+
+
+      <!-- Tools -->
+      <section class="bg-white rounded-[29px] shadow-lg p-6 flex flex-col gap-6 w-[300px] h-[847px]">
+  <h2 class="text-2xl font-semibold text-center">Tools</h2>
+
+  <!-- Languages Card -->
+  <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 mx-auto w-[220px]">
+    <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Languages</span>
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/tailwind_css.png" alt="Tailwind CSS" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" class="w-12 h-12 mx-auto">
+    </div>
+  </div>
+
+  <!-- Design Card -->
+  <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 mx-auto w-[220px]">
+    <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Design</span>
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/adobe-creative-cloud.png" alt="Adobe CC" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="Figma" class="w-12 h-12 mx-auto">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" class="w-12 h-12 mx-auto">
+    </div>
+  </div>
+</section>
+
+    </div>
+
+   <footer class="footer">
+  <div class="footer-chat">
+    Let's chat! I'm ready to work on exciting projects
+  </div>
+  <div class="footer-info">
+    Email: youremail@example.com | Phone: +1234567890 | 
+    <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio</a>
+  </div>
+</footer>
+  </div>
+</body>
+</html>
