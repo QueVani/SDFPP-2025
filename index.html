@@ -7,27 +7,46 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 relative font-poppins">
+<body class="bg-gray-50 relative">
 
   <!-- Background gradient -->
   <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-purple-50 opacity-20 -z-10"></div>
 
   <div class="max-w-[90%] mx-auto py-12">
 
-    <!-- Profile Header -->
-    <header class="bg-white w-full rounded-[29px] shadow-lg flex flex-col md:flex-row items-center gap-8 py-12 px-8">
+    <!-- Profile Section -->
+    <div class="flex flex-col md:flex-row items-start gap-[40px]">
+
       <!-- Profile Picture -->
-      <div class="flex-shrink-0">
-        <img src="your-image.jpg" alt="Profile Photo" class="w-[300px] h-[300px] rounded-[29px] object-cover shadow-lg">
-      </div>
-      <!-- Name & Summary -->
-      <div class="flex flex-col items-center md:items-start text-center md:text-left">
-        <h1 class="text-5xl sm:text-6xl md:text-[64px] font-bold text-gray-900 leading-tight">Your Name</h1>
-        <p class="mt-6 text-lg sm:text-xl md:text-[20px] text-gray-700 max-w-[600px]">
-          A brief professional summary highlighting your key skills and experience.
+      <img 
+        src="your-image.jpg"
+        class="w-[300px] h-[300px] rounded-[29px] shadow-lg object-cover mx-auto md:mx-0"
+      />
+
+      <!-- Name & Summary Container -->
+      <header
+        class="bg-white rounded-[29px] shadow-lg
+               w-full md:w-[994px] h-[300px]   /* Matches profile pic height */
+               p-[40px] flex flex-col gap-6"> <!-- small gap instead of justify-between -->
+
+        <!-- Name -->
+        <h1 class="text-[48px] md:text-[64px] font-bold text-gray-900 leading-tight">
+          Qhama Vani
+        </h1>
+
+        <!-- Summary Paragraph -->
+        <p class="text-[18px] md:text-[19px] text-gray-700 leading-[1.4]">
+          A tech-savvy support specialist with 6+ years of experience in customer service 
+          and technical support. Adept at troubleshooting, problem-solving, and providing 
+          exceptional service to clients. Skilled in various software and tools, with a 
+          passion for technology and continuous learning.
         </p>
-      </div>
-    </header>
+
+      </header>
+
+    </div>
+  </div>
+    </div>
     <!-- Proficiency + Skills Row -->
 <div class="flex flex-col md:flex-row gap-8 mt-16 justify-center">
     <!-- Proficiency Bars -->
