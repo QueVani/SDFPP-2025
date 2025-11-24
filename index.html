@@ -12,7 +12,17 @@
   <!-- Background gradient -->
   <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-purple-50 opacity-20 -z-10"></div>
 
-  <div class="max-w-[90%] mx-auto py-12">
+  <!-- Main Layout Wrapper -->
+<div class="mx-auto relative border border-8" 
+     style="
+       width: 1440px;
+       border-radius: 0;
+       border-image: linear-gradient(0deg, #000000, #000000) 1;
+       box-sizing: border-box;
+     ">
+
+  <!-- Content inside wrapper -->
+    <div class="flex gap-[28.62px] mt-16 items-start"> <!-- add items-start to align top edges -->
 
     <!-- Profile Section -->
     <div class="flex flex-col md:flex-row items-start gap-[40px]">
@@ -82,138 +92,234 @@
 
 
       <!-- Skill Tags -->
-      <section class="bg-white w-full md:max-w-[706px] rounded-[29px] shadow-lg p-7 flex flex-col gap-[39px]">
-        <h2 class="text-2xl font-semibold">Skills</h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">HTML</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">CSS</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">JavaScript</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">React</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Node.js</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Tailwind</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Git</span>
-          <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Figma</span>
-        </div>
-      </section>
+<section class="skills-container bg-white rounded-[29px] shadow-lg p-[28px] w-[706px] h-[429px] flex flex-col gap-[39px]">
+  <h2 class="text-2xl font-semibold">Skills</h2>
+  <div class="flex flex-wrap gap-[24.2px]">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">React</span>
+    <span class="skill-tag">Node.js</span>
+    <span class="skill-tag">Tailwind</span>
+    <span class="skill-tag">Git</span>
+    <span class="skill-tag">Figma</span>
+  </div>
+</section>
     </div>
 
-    <!-- Projects Section -->
-<section class="bg-white w-full rounded-[29px] shadow-lg p-8 mt-16">
-  <!-- Heading centered at top -->
-  <h2 class="text-center font-medium text-[33.88px] leading-[150%] text-gray-900 mb-8" style="width: 136px; height: 51px; margin: 0 auto;">
-    Projects
-  </h2>
+   <!-- Projects Row -->
+<div class="flex gap-8 overflow-x-auto pb-4">
+  
+  <!-- first project placeholder -->
+  <article class="rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] bg-[#4A8B70] text-white flex-shrink-0">
+    <h3 class="text-xl font-bold mb-4">Project Title 1</h3>
+    <p class="flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+    <div class="mt-auto">
+      <span class="font-medium underline">View More</span>
+    </div>
+  </article>
 
-  <!-- Projects Row -->
-  <div class="flex gap-8 overflow-x-auto pb-4">
-    
-    <!-- first project placeholder -->
-    <article class="rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] bg-[#4A8B70] text-white flex-shrink-0">
-      <h3 class="text-xl font-bold mb-4">Project Title 1</h3>
-      <p class="flex-grow">Brief description of the project, technologies used, and key achievements.</p>
-      <div class="mt-auto">
-        <span class="font-medium underline">View More</span>
+  <!-- second project placeholder -->
+  <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+    <h3 class="text-xl font-bold mb-4">Project Title 2</h3>
+    <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+    <div class="mt-auto">
+      <span class="text-blue-500 font-medium">View More</span>
+    </div>
+  </article>
+
+  <!-- third project placeholder -->
+  <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+    <h3 class="text-xl font-bold mb-4">Project Title 3</h3>
+    <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+    <div class="mt-auto">
+      <span class="text-blue-500 font-medium">View More</span>
+    </div>
+  </article>
+
+  <!-- fourth project placeholder -->
+  <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
+    <h3 class="text-xl font-bold mb-4">Project Title 4</h3>
+    <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
+    <div class="mt-auto">
+      <span class="text-blue-500 font-medium">View More</span>
+    </div>
+  </article>
+
+</div>
+
+<!-- Education + Tools Row -->
+<div class="flex gap-[28.62px] mt-16" style="max-width: 1380px; margin-left: 0;">
+
+ <!-- Education Section -->
+<section class="bg-white rounded-[29.04px] shadow-lg flex flex-col gap-[20px] p-[29px]" style="width: 994.689px;">
+  <h2 class="text-3xl font-semibold mb-4">Education</h2>
+
+  <!-- Education Card 1: Certificate -->
+  <article class="bg-[#4A8B70] rounded-[29px] p-[35px] flex md:flex-row flex-col gap-8 w-full text-white min-h-[180px]">
+    <!-- LEFT COLUMN -->
+    <div class="md:w-1/3 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold">Certificate in Software Development</h3>
+      <p class="text-gray-100 mt-1">Codespace - Cape Town, Western Cape</p>
+      <p class="text-gray-100 mt-1">June 2025 – Present</p>
+    </div>
+    <!-- RIGHT COLUMN -->
+    <ul class="list-disc list-inside md:w-2/3 text-gray-100 space-y-2">
+      <li>Building foundational software development skills in modern programming languages</li>
+      <li>Engaging in hands-on projects to develop practical coding and problem-solving experience</li>
+    </ul>
+  </article>
+
+  <!-- Education Card 2: Undergraduate -->
+  <article class="bg-gray-100 rounded-[29px] p-[35px] flex md:flex-row flex-col gap-8 w-full text-black min-h-[180px]">
+    <div class="md:w-1/3 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold">BSc Mathematics and Chemistry (Undergraduate)</h3>
+      <p class="text-gray-600 mt-1">University of Free State</p>
+      <p class="text-gray-600 mt-1">January 2017 – December 2020</p>
+    </div>
+    <ul class="list-disc list-inside md:w-2/3 text-gray-700 space-y-2">
+      <li>Developed analytical and quantitative skills through coursework in mathematics and chemistry</li>
+      <li>Participated in group projects that enhanced research and problem-solving abilities</li>
+    </ul>
+  </article>
+
+  <!-- Education Card 3: Grade 12 -->
+  <article class="bg-gray-100 rounded-[29px] p-[35px] flex md:flex-row flex-col gap-8 w-full text-black min-h-[180px]">
+    <div class="md:w-1/3 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold">Grade 12 | NQF</h3>
+      <p class="text-gray-600 mt-1">Lawson Brown High School - Port Elizabeth, Eastern Cape</p>
+      <p class="text-gray-600 mt-1">January 2012 – December 2016</p>
+    </div>
+    <ul class="list-disc list-inside md:w-2/3 text-gray-700 space-y-2">
+      <li>Built core academic skills and developed an early passion for problem-solving</li>
+      <li>Participated in school projects that honed creative and analytical thinking</li>
+      <li>Engaged in extracurricular activities to strengthen leadership and teamwork abilities</li>
+    </ul>
+  </article>
+</section>
+  <!-- Tools Section -->
+  <section class="bg-white rounded-[29.04px] shadow-lg flex flex-col gap-6 p-6"
+           style="width: 300.101px; height: 847.059px;">
+    <h2 class="text-2xl font-semibold text-center">Tools</h2>
+
+    <!-- Languages Card -->
+    <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 w-full flex-1">
+      <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Languages</span>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/tailwind_css.png" alt="Tailwind CSS" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" class="w-12 h-12 mx-auto">
       </div>
+    </div>
+
+    <!-- Design Card -->
+    <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 w-full flex-1">
+      <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Design</span>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/adobe-creative-cloud.png" alt="Adobe CC" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="Figma" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" class="w-12 h-12 mx-auto">
+      </div>
+    </div>
+
+    <!-- Tools Card -->
+    <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 w-full flex-1">
+      <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Tools</span>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://img.icons8.com/color/48/npm.png" alt="npm" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/git.png" alt="Git" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" class="w-12 h-12 mx-auto">
+        <img src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="VS Code" class="w-12 h-12 mx-auto">
+      </div>
+    </div>
+  </section>
+</div>
+
+  
+  <!-- Experience Section (below Education + Tools) -->
+<section class="bg-white rounded-[29px] shadow-lg flex flex-col gap-[30px] p-[29px] mt-8 mb-16"
+         style="width: 1316px; margin-left: auto; margin-right: auto;">
+  <h2 class="text-3xl font-semibold mb-4">Experience</h2>
+
+  <div class="flex flex-col gap-[10px]">
+
+    <!-- Experience Card 1 -->
+    <article class="bg-gray-100 rounded-[29px] flex md:flex-row flex-col gap-6 p-[27px_21px] w-[1260px] h-[145px] mx-auto text-black">
+      <!-- LEFT COLUMN: title & date -->
+      <div class="md:w-1/3 flex flex-col justify-center">
+        <h3 class="text-xl font-bold">Customer Service Advisor</h3>
+        <p class="text-gray-600">Concentrix - Cape Town, Western Cape</p>
+        <p class="text-gray-600">April 2022 – Present</p>
+      </div>
+
+      <!-- RIGHT COLUMN: bullet points -->
+      <ul class="list-disc list-inside md:w-2/3 text-gray-700 space-y-1">
+        <li>Actively seeking solutions through local reasoning to solve and mitigate any issues with customers.</li>
+        <li>Documenting, tracking and monitoring the problem to ensure a timely resolution.</li>
+        <li>Providing technical assistance and support for incoming queries and issues related to the website and the App.</li>
+      </ul>
     </article>
 
-    <!-- second project placeholder -->
-    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
-      <h3 class="text-xl font-bold mb-4">Project Title 2</h3>
-      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
-      <div class="mt-auto">
-        <span class="text-blue-500 font-medium">View More</span>
+    <!-- Experience Card 2 -->
+    <article class="bg-gray-100 rounded-[29px] flex md:flex-row flex-col gap-6 p-[27px_21px] w-[1260px] h-[145px] mx-auto text-black">
+      <div class="md:w-1/3 flex flex-col justify-center">
+        <h3 class="text-xl font-bold">Technical Support Agent</h3>
+        <p class="text-gray-600">Amazon - Cape Town, Western Cape</p>
+        <p class="text-gray-600">December 2020 – April 2022</p>
       </div>
+      <ul class="list-disc list-inside md:w-2/3 text-gray-700 space-y-1">
+        <li>Investigate and resolve queries regarding Amazon’s digital services and devices, such as Kindle and Fire TV.</li>
+        <li>Troubleshooting problems across various operating systems and applications.</li>
+        <li>Use a variety of tools to analyze and troubleshoot issues in real-time, investigate solutions, and communicate effectively with customers.</li>
+      </ul>
     </article>
 
-    <!-- third project placeholder -->
-    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
-      <h3 class="text-xl font-bold mb-4">Project Title 3</h3>
-      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
-      <div class="mt-auto">
-        <span class="text-blue-500 font-medium">View More</span>
+    <!-- Experience Card 3 -->
+    <article class="bg-gray-100 rounded-[29px] flex md:flex-row flex-col gap-6 p-[27px_21px] w-[1260px] h-[145px] mx-auto text-black">
+      <div class="md:w-1/3 flex flex-col justify-center">
+        <h3 class="text-xl font-bold">Call Centre Agent</h3>
+        <p class="text-gray-600">Merchants SA - Cape Town, Western Cape</p>
+        <p class="text-gray-600">December 2017 – October 2020</p>
       </div>
-    </article>
-
-    <!-- fourth project placeholder -->
-    <article class="bg-gray-50 rounded-[29px] shadow-lg flex flex-col p-6 w-[280px] h-[581px] flex-shrink-0">
-      <h3 class="text-xl font-bold mb-4">Project Title 4</h3>
-      <p class="text-gray-700 flex-grow">Brief description of the project, technologies used, and key achievements.</p>
-      <div class="mt-auto">
-        <span class="text-blue-500 font-medium">View More</span>
-      </div>
+      <ul class="list-disc list-inside md:w-2/3 text-gray-700 space-y-1">
+        <li>Maintaining a positive, empathetic, and professional attitude toward customers at all times.</li>
+        <li>Responding promptly to customer queries and acknowledging/resolving complaints.</li>
+        <li>Keeping records of customer interactions, transactions, comments, and complaints.</li>
+        <li>Providing feedback on the efficiency of the customer service process.</li>
+      </ul>
     </article>
 
   </div>
 </section>
+<!-- Footer -->
+<footer class="mx-auto bg-[#D76239] rounded-[29px] p-[29px] flex flex-col gap-[4.84px]"
+        style="width: 1322px; height: 158px; box-sizing: border-box;">
 
-    <!-- Education + Tools Row -->
-<div class="flex gap-8 mt-16">
-
-   <!-- Education Section -->
-<section class="bg-white rounded-[29px] shadow-lg p-[29px] flex flex-col gap-[10px] w-[995px] h-[847px]">
-  <h2 class="text-3xl font-semibold mb-6">Education</h2>
-
-  <!-- First Education Card -->
-  <article class="bg-[#4A8B70] rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px] text-white">
-    <h3 class="text-xl font-bold">Bachelor of Science, University Name</h3>
-    <p>2015 – 2019 | Major: Computer Science</p>
-    <p>Additional details about achievements or focus areas can go here.</p>
-  </article>
-
-  <!-- Second Education Card -->
-  <article class="bg-gray-100 rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px]">
-    <h3 style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">Bachelor of Science</h3>
-    <p style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">University Name | 2015–2019</p>
-  </article>
-
-  <!-- third Education Card -->
-  <article class="bg-gray-100 rounded-[29px] p-[27px_21px] flex flex-col gap-[35px] w-[936px] h-[242px]">
-    <h3 style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">Bachelor of Science</h3>
-    <p style="font-family: 'Poppins'; font-weight: 400; font-size: 19.36px; line-height: 150%;">University Name | 2015–2019</p>
-  </article>
-</section>
-
-
-      <!-- Tools -->
-      <section class="bg-white rounded-[29px] shadow-lg p-6 flex flex-col gap-6 w-[300px] h-[847px]">
-  <h2 class="text-2xl font-semibold text-center">Tools</h2>
-
-  <!-- Languages Card -->
-  <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 mx-auto w-[220px]">
-    <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Languages</span>
-    <div class="grid grid-cols-2 gap-4">
-      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/tailwind_css.png" alt="Tailwind CSS" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" class="w-12 h-12 mx-auto">
-    </div>
-  </div>
-
-  <!-- Design Card -->
-  <div class="bg-gray-100 rounded-[20px] p-6 flex flex-col items-center gap-6 mx-auto w-[220px]">
-    <span class="bg-black text-white px-4 py-1 rounded-full text-sm uppercase">Design</span>
-    <div class="grid grid-cols-2 gap-4">
-      <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/adobe-creative-cloud.png" alt="Adobe CC" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="Figma" class="w-12 h-12 mx-auto">
-      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" class="w-12 h-12 mx-auto">
-    </div>
-  </div>
-</section>
-
-    </div>
-
-   <footer class="footer">
-  <div class="footer-chat">
+  <!-- "Let's chat" section at the top -->
+  <div class="text-white"
+       style="
+         width: 1263.916px;
+         height: 51px;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 500;
+         font-style: normal;
+         font-size: 33.88px;
+         line-height: 150%;
+         vertical-align: middle;
+       ">
     Let's chat! I'm ready to work on exciting projects
   </div>
-  <div class="footer-info">
-    Email: youremail@example.com | Phone: +1234567890 | 
-    <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio</a>
+
+  <!-- Other contact info below -->
+  <div class="text-white text-sm flex flex-wrap gap-4">
+    Email: youremail@example.com | Phone: +1234567890 |
+    <a href="#" class="underline">LinkedIn</a> |
+    <a href="#" class="underline">GitHub</a> |
+    <a href="#" class="underline">Portfolio</a>
   </div>
+  
 </footer>
-  </div>
-</body>
-</html>
