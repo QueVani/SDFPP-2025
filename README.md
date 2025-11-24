@@ -110,6 +110,8 @@ You can earn bonus marks for:
 - ✅ Push your project to your SDFPP GitHub repo
 - ✅ Submit your SDFPP GitHub repo link to the LMS
 
+- https://app.screencastify.com/watch/uxSYsiU9BUAbw72ZN7Tp?checkOrg=f160de11-2d1e-4099-bf75-18a663d3c9f5
+
 ---
 
 ## 🙌 Good Luck!
